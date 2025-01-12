@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background for a clean look */
+    margin: 20px;
+    color: #333;
+}
+
+/* Card Styles */
+.card {
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    max-width: 400px; /* Limit card width */
+    background-color: #fff; /* White card background */
+}
+
+/* Card Image */
+.card-img-top, .card-img-bottom {
+    height: 200px;
+    object-fit: cover; /* Ensures image is fully visible within bounds */
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Card Text */
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+    
+}
+
+/* Buttons */
+.btn, .booknowbtn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:#704C5E;
+    background-color: #F1C8DB; /* Bootstrap primary color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover, .booknowbtn:hover {
+    background-color: #F1C8DB;
+}
+
+/* Book Now Buttons */
+.booknowbtn {
+    background-color: white; /* Green for booking */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+}

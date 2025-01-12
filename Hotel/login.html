@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Title */
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Form Inputs */
+        .booking-form label {
+            font-weight: bold;
+            color: #555555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .booking-form input, 
+        .booking-form select, 
+        .booking-form button {
+            width: 90%;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        /* Input Hover Effect */
+        .booking-form input:focus,
+        .booking-form select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Submit Button */
+        .btn {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Form alignment */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Log In</h2>
+        <form action="process_booking.php" method="POST" class="booking-form">
+            <div class="form-group">
+                <label for="checkin">Username</label>
+                <input type="name" id="name" name="name" required>
+       
+            </div>
+            
+            <div class="form-group">
+                <label for="checkin">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+       
+            </div>
+            <div class="form-group">
+                <label for="checkout">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+            </div>
+            <button type="submit" class="btn">Log In</button>
+        </form>
+    </div>
+    <script>
+    const loginForm = document.querySelector('.booking-form');
+
+loginForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const username = document.getElementById('name').value; // Username field
+    const email = document.getElementById('email').value;  // Email field
+    const password = document.getElementById('password').value; // Password field
+
+    const formData = { username, email, password }; // Include all fields
+
+    try {
+        const response = await fetch('http://localhost:3000/api/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            alert(result.message); // "Login successful"
+        } else {
+            alert(`Error: ${result.message}`); // Show error message
+        }
+    } catch (error) {
+        console.error('Error during login:', error);
+        alert('An error occurred during login.');
+    }
+});
+
+          
+    </script>
+</body>
+</html>
+

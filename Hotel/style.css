@@ -1,0 +1,71 @@
+ .container{
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Keeps the image's aspect ratio */
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+  object-fit: cover; 
+}
+.navbar-brand:hover{
+  color:red;
+  font-size: 2rem;
+}
+.right{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  background-color: antiquewhite;
+  padding: 5px;
+  margin-top: 35px;
+  border-radius: 8px;
+  margin-left:25px;
+  margin-right: 25px;
+  width:80px;
+  align-items: center;
+  flex-grow:1;
+  margin-left: 200px;;
+}
+ .img{
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Keeps the image's aspect ratio */
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+  object-fit: cover; 
+}
+.text-container{
+  padding: 20px;
+  background-color: #001D4A; /* Dark blue with slight transparency */
+  color: #EAF8BF; /* White font color for readability */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 800px; /* Limits width to avoid text spread */
+  margin: 20px auto; /* Centers container on the page */
+  font-size: 18px; /* Adjust font size as needed */
+  text-align: justify;
+  border-radius: 9px;
+  ;
+ 
+}
+.book-btn{
+  margin-left:150px;
+  margin-top:10px;
+  border-radius: 6px;;
+}
+.book-btn:hover{
+  background-color: bisque;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent navbar */
+  }
+  .navbar-brand {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #000; /* Black for branding */
+}
+.footer{
+  margin-top: 100px;
+  
+}
+.footer:hover{
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 790px;;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard-Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style1.css" rel="stylesheet">
+    <style>
+       /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background for a clean look */
+    margin: 20px;
+    color: #333;
+}
+
+/* Card Styles */
+.card {
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    max-width: 400px; /* Limit card width */
+    background-color: #fff; /* White card background */
+}
+
+/* Card Image */
+.card-img-top, .card-img-bottom {
+    height: 200px;
+    object-fit: cover; /* Ensures image is fully visible within bounds */
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Card Text */
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+    
+}
+
+/* Buttons */
+.btn, .booknowbtn {
+  text-decoration: none;
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:#704C5E;
+    background-color: #F1C8DB; /* Bootstrap primary color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover, .booknowbtn:hover {
+    background-color: #F1C8DB;
+}
+
+/* Book Now Buttons */
+.booknowbtn {
+    background-color: white; /* Green for booking */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="standard1.jpg" class="card-img-top" alt="Standard Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Room</h5>
+                        <p class="card-text">This spacious room boasts sweeping views of the city, making it a perfect retreat for those who want a bit of luxury while staying connected to the urban vibe. The Superior Deluxe Room offers additional space, upgraded amenities, and sophisticated decor.</p>
+                        <a href="booknow.html" class="btn" style="text-decoration: none;">BOOK NOW! PRICE: $300</a>
+        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="standard2.jpg" class="card-img-top" alt="Standard Room with Balcony">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard Room with Balcony</h5>
+                        <p class="card-text">The Standard Room combines elegance with outdoor access, featuring a private balcony where guests can unwind with a view of the skyline or hotel gardens. It’s designed for those who seek extra comfort and a refined experience.</p>
+                        <a href="booknow.html" class="btn" style="text-decoration: none;">BOOK NOW! PRICE: $500</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <img src="standard3.jpg" class="card-img-top" alt="Standard Room with Balcony">
+                  <div class="card-body">
+                      <h5 class="card-title">Standard Room with Balcony</h5>
+                      <p class="card-text">The Standard Room offers a cozy retreat with modern amenities, including comfortable bedding, an en-suite bathroom, a flat-screen TV, and high-speed Wi-Fi. Large windows fill the space with natural light, creating a welcoming ambiance. Perfect for relaxation or business, it combines convenience, style, and value for a memorable stay.</p>
+                      <a href="booknow.html" class="btn" style="text-decoration: none;">BOOK NOW! PRICE: $350</a>  
+                                    </div>
+              </div>
+          </div>
+
+
+            <!-- Add More Cards Here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
