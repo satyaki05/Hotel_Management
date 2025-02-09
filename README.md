@@ -10,4 +10,4 @@ A web-based hotel management system to handle bookings, room management, and cus
 ## Technologies Used
 - HTML, CSS, Bootstrap
 - JavaScript
-- Backend: [Specify your backend technology]
+- Backend:Nodejs,MySql(database)
